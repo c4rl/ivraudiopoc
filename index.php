@@ -14,4 +14,3 @@ $responder->push('Your @artwork card has balance of @balance', [
 ]);
 
 echo $responder->toXml();
-
