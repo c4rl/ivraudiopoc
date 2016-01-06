@@ -7,9 +7,9 @@
     "text": "Your @artwork card has balance of @balance",
     "audio": [
       "YOUR.aiff",
-      "literal:@artwork",
+      "@artwork",
       "CARD_HAS_BALANCE_OF.aiff",
-      "numeric:@balance"
+      "@balance"
     ]
   }
 ]
