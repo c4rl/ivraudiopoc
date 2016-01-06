@@ -1,0 +1,15 @@
+[
+  {
+    "text": "Hello",
+    "audio": "HELLO.aiff"
+  },
+  {
+    "text": "Your @artwork card has balance of @balance",
+    "audio": [
+      "YOUR.aiff",
+      "literal:@artwork",
+      "CARD_HAS_BALANCE_OF.aiff",
+      "numeric:@balance"
+    ]
+  }
+]
