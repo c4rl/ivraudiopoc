@@ -25,6 +25,3 @@ See `script.json` for dictionary format.
       <Say>$12345.67</Say>
     </Response>
 
-### @todo
-
-* [Implement audible balance formatting](https://cardtest.atlassian.net/browse/EN-1613)

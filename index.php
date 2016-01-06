@@ -1,6 +1,7 @@
 <?php
 
 include './lib/Responder.php';
+include './lib/AudibleString.php';
 
 if (!isset($argv[1]) || !in_array($argv[1], [
     'text',

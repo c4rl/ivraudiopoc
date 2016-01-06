@@ -128,10 +128,26 @@ class Responder {
   static public function parseAudioDirectives(array $audio, array $placeholders = []) {
     return array_map(function ($item) use ($placeholders) {
 
+      // Split out filters from placeholders.
+      if (preg_match('/^(@.+):(.+)$/', $item, $matches) == 1) {
+        $key = $matches[1];
+        $filters = explode(':', $matches[2]);
+      }
+      else {
+        $key = $item;
+        $filters = [];
+      }
+
       // For placeholder key, use robot voice.
-      if (array_key_exists($item, $placeholders)) {
+      if (array_key_exists($key, $placeholders)) {
+
+        // Apply filters.
+        $value = array_reduce($filters, function ($value, $filter) {
+          return AudibleString::$filter($value);
+        }, $placeholders[$key]);
+
         return [
-          'say' => $placeholders[$item],
+          'say' => $value,
         ];
       }
 
