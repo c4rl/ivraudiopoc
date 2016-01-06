@@ -9,7 +9,7 @@
       "YOUR.aiff",
       "@artwork",
       "CARD_HAS_BALANCE_OF.aiff",
-      "@balance:parseCurrency"
+      "@balance:currencyToWords"
     ]
   }
 ]

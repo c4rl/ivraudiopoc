@@ -18,7 +18,7 @@ class AudibleString {
    * @return string
    *   Audible string representing currency, e.g. "minus one hundred twenty three dollars and forty five cents.
    */
-  static public function parseCurrency($currency) {
+  static public function currencyToWords($currency) {
 
     // Remove non-numeric, minus sign, decimal.
     $value = (float) preg_replace('/[^0-9\-\.]/', '', $currency);
