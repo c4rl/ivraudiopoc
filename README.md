@@ -22,6 +22,5 @@ See `script.json` for dictionary format.
       <Play>YOUR.aiff</Play>
       <Say>Garfield</Say>
       <Play>CARD_HAS_BALANCE_OF.aiff</Play>
-      <Say>$12345.67</Say>
+      <Say>twelve thousand three hundred forty five dollars and sixty seven cents</Say>
     </Response>
-
