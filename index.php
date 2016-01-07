@@ -31,7 +31,7 @@ $balance = '$12345.67';
 $responder->push('Hello');
 $responder->push('Your @artwork card has balance of @balance', [
   '@artwork' => $artwork,
-  '@balance' => $balance,
+  '@balance' => AudibleString::currencyToWords($balance),
 ]);
 
 echo $responder->toXml();
