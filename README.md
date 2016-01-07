@@ -10,7 +10,7 @@ See `script.json` for dictionary format.
     <?xml version="1.0"?>
     <Response>
       <Say>Hello</Say>
-      <Say>Your Garfield card has balance of $12345.67</Say>
+      <Say>Your Garfield card has balance of twelve thousand three hundred forty five dollars and sixty seven cents</Say>
     </Response>
 
 ### Usage: audio
